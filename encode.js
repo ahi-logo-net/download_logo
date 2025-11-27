@@ -37,7 +37,7 @@ function downloadImg(){
   download.download = content + ".png";
   download.click();
   const link = document.createElement('a');
-  link.href = "https://memo.zu-ga.net/30001.html"
+  link.href = "https://memo.zu-ga.net/26360.html"
   link.click();
   console.log('クリックしました');
 }
