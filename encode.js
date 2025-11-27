@@ -37,9 +37,8 @@ function downloadImg(){
   download.download = content + ".png";
   download.click();
   const link = document.createElement('a');
-  link.href = "https://memo.zu-ga.net/26360.html"
+  link.href = "https://memo.zu-ga.net/26360"
   link.click();
-  console.log('クリックしました');
 }
 if (type === '0'){
   drawPath("m -8,82 c 0,0 10,-9 24,-9 14,0 42,15 42,15 0,0 24,15 39,15 C 112,103 130,91 130,91 l 0,14 c 0,0 -21,9 -33,9 -12,0 -38,-12 -38,-12 0,0 -33,-18 -44,-18 -12,0 -23,10 -23,10 z");
@@ -51,7 +50,6 @@ if (type === '0'){
   });
 } else if(type === '1') {
   document.fonts.load("16px 'Mochiy Pop P One'").then(() => {
-    console.log('font読み込み完了');
     drawPath("M 113,47 85,73 91,110 58,92 24,109 31,72 4,45 42,40 59,6 75,40 Z");
     ctx.font = "normal 54px 'Mochiy Pop P One', sans-serif";
     lengthAdjust(content, 58.4, 54.8, 106);
