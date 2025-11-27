@@ -1,21 +1,21 @@
 const params = new URLSearchParams(window.location.search);
 const content = params.get('t') || '';
-const color = params.get('c') || 'fff';
-const decoration = params.get('d') || '00000000';
+const color = params.get('c') || '#fff';
+const decoration = params.get('d') || '#00000000';
 const type = params.get('a') || '0';
-const textColor = params.get('b') || 'fff';
+const textColor = params.get('b') || '#fff';
 
 const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d");
 canvas.width = 120;
 canvas.height = 120;
-ctx.fillStyle = "#" + color;
+ctx.fillStyle = color;
 ctx.fillRect(0,0,canvas.width,canvas.height);
 
 function drawPath(d){
   ctx.save();
   const path = new Path2D(d);
-  ctx.fillStyle = '#' + decoration;
+  ctx.fillStyle = decoration;
   ctx.fill(path);
   ctx.restore();
 }
@@ -23,7 +23,7 @@ function lengthAdjust(text, x, y, width) {
   const actualWidth = ctx.measureText(text).width;
   const scaleX = width / actualWidth;
   ctx.save();
-  ctx.fillStyle = "#" + textColor;
+  ctx.fillStyle = textColor;
   ctx.textAlign = "center";
   ctx.translate(x, y);
   ctx.scale(scaleX, 1);
