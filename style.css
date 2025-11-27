@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Mochiy Pop P One';
+  src: url('./MochiyPopOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kosugi Maru';
+  src: url('./KosugiMaru-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('./NotoSansJP-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
