@@ -6,6 +6,7 @@ const type = Number(params.get('a')) || 0;
 const textColor = params.get('b') || '#fff';
 const typeBefore = ['空想','',''];
 const typeAfter = ['','都ふぁん','くらぶ'];
+const referrer = document.referrer();
 
 const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d");
