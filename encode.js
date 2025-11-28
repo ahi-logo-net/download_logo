@@ -39,8 +39,8 @@ function downloadImg(){
   download.download = typeBefore[type] + content + typeAfter[type] + ".png";
   download.click();
   const link = document.createElement('a');
-  // link.href = "https://memo.zu-ga.net/26360"
-  // link.click();
+  link.href = "https://memo.zu-ga.net/26360"
+  link.click();
 }
 if (type === 0){
   drawPath("m -8,82 c 0,0 10,-9 24,-9 14,0 42,15 42,15 0,0 24,15 39,15 C 112,103 130,91 130,91 l 0,14 c 0,0 -21,9 -33,9 -12,0 -38,-12 -38,-12 0,0 -33,-18 -44,-18 -12,0 -23,10 -23,10 z");
